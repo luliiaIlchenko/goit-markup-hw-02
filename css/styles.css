@@ -21,6 +21,10 @@
   list-style: none;
 }
 
+.link {
+  text-decoration: none;
+}
+
 /*Стили для Шапки*/
 
 body {
@@ -31,17 +35,30 @@ body {
   color: var(--primary-title-color);
 }
 .site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav .link:focus,
+.contacts .link:hover,
+.contacts .link:focus {
   color: var(--accent-color);
 }
 
-.contacts {
+.contacts .link {
   color: var(--primary-text-color);
+}
+
+/*Логотип*/
+
+.logo {
+  color: var(--accent-color);
+}
+
+.logo-style {
+  color: var(--primary-title-color);
 }
 
 /*Стили для Героя*/
 .hero-title {
   color: #ffffff;
+  background-color: #757575;
 }
 .button {
   color: var(--button-text-color);
