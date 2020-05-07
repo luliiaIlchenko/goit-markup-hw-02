@@ -1,21 +1,41 @@
 /*цвет основного контента #757575*/
 /*цвет заголовка #212121*/
 /*цвет акцента #2196F3*/
+/*белый цвет #FFFFFF*/
 
 :root {
   --primery-text-color: #757575;
   --primary-title-color: #212121;
   --accent-color: #2196f3;
+  --primery-white-color: #ffffff
+  --button-text-color: #ffffff;
 }
 
-ul {list-style: none;}
+ul {
+  list-style: none;
+}
 /*Стили для шапки*/
 
 body {
   color: var(--primery-text-color);
 }
 
-.logo {color}
+.logo {
+  color: red;
+}
 
-.site-nav:hover,
-.site-nav:focus {var(--accent-color);}
+.site-nav {
+  color: var(--primary-title-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+
+/*Стили для героя*/
+.button {
+  color: var(--button-text-color);
+  background-color: var(--accent-color);
+}
+
