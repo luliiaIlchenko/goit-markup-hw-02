@@ -8,17 +8,18 @@
   </head>
 
   <body>
+    <!--Шапка-->
     <header>
       <nav>
-        <a href="./index.html" class="logo">Web Studio</a>
-        <ul class="site-nav">
+        <a href="./index.html">Web Studio</a>
+        <ul class="site-nav list">
           <li><a href="#" class="link">Студия</a></li>
           <li><a href="./portfolio.html" class="link">Портфолио</a></li>
           <li><a href="#" class="link">Контакты</a></li>
         </ul>
       </nav>
 
-      <ul class="site-nav">
+      <ul class="site-nav list contacts">
         <li>
           <a href="mailto:info@devstudio.com" class="link"
             >info@devstudio.com</a
@@ -31,37 +32,39 @@
     </header>
 
     <main>
-      <section>
-        <h1>эффективные решения для вашего бизнеса</h1>
+      <!--Герой-->
+      <section class="hero">
+        <h1 class="hero-title">эффективные решения для вашего бизнеса</h1>
         <a class="button">Заказать услугу</a>
       </section>
 
+      <!--Наши преимущества-->
       <section>
-        <h2>наши преимущества</h2>
-        <ul>
+        <h2 class="section-title">Наши преимущества</h2>
+        <ul class="list">
           <li>
-            <h3>Внимание к деталям</h3>
+            <h3 class="advantages-title">Внимание к деталям</h3>
             <p>
               Идейные соображения, а также начало повседневной работы по
               формированию позиции.
             </p>
           </li>
           <li>
-            <h3>Пунктуальность</h3>
+            <h3 class="advantages-title">Пунктуальность</h3>
             <p>
               Задача организации, в особенности же рамки и место обучения кадров
               влечет за собой.
             </p>
           </li>
           <li>
-            <h3>Планирование</h3>
+            <h3 class="advantages-title">Планирование</h3>
             <p>
               Равным образом консультация с широким активом в значительной
               степени обуславливает.
             </p>
           </li>
           <li>
-            <h3>Современные технологии</h3>
+            <h3 class="advantages-title">Современные технологии</h3>
             <p>
               Значимость этих проблем настолько очевидна, что реализация
               плановых заданий.
@@ -70,9 +73,10 @@
         </ul>
       </section>
 
+      <!--Чем мы занимаемся-->
       <section>
-        <h2>Чем мы занимаемся</h2>
-        <ul>
+        <h2 class="section-title">Чем мы занимаемся</h2>
+        <ul class="list">
           <li>
             <img
               src="./images/app.jpg"
@@ -103,10 +107,10 @@
         </ul>
       </section>
 
-      <!--team-section-->
+      <!--Наша команда-->
       <section>
-        <h2>Наша команда</h2>
-        <ul>
+        <h2 class="section-title">Наша команда</h2>
+        <ul class="list">
           <li>
             <img
               src="./images/smith-photo.jpg"
@@ -116,7 +120,7 @@
             />
             <h3>John Smith</h3>
             <p>Product Designer</p>
-            <ul>
+            <ul class="list">
               <li>
                 <a href="#" aria-label="Ссылка на Instagram">Instagram</a>
               </li>
@@ -134,7 +138,7 @@
             />
             <h3>Marta Stewart</h3>
             <p>Frontend Developer</p>
-            <ul>
+            <ul class="list">
               <li>
                 <a href="#" aria-label="Ссылка на Instagram">Instagram</a>
               </li>
@@ -152,7 +156,7 @@
             />
             <h3>Robert Jakis</h3>
             <p>Marketing</p>
-            <ul>
+            <ul class="list">
               <li>
                 <a href="#" aria-label="Ссылка на Instagram">Instagram</a>
               </li>
@@ -170,7 +174,7 @@
             />
             <h3>Martin Doe</h3>
             <p>UI Designer</p>
-            <ul>
+            <ul class="list">
               <li>
                 <a href="#" aria-label="Ссылка на Instagram">Instagram</a>
               </li>
@@ -182,10 +186,10 @@
         </ul>
       </section>
 
-      <!--clients-section-->
+      <!--Постоянные клиенты-->
       <section>
-        <h2>Постоянные клиенты</h2>
-        <ul>
+        <h2 class="section-title">Постоянные клиенты</h2>
+        <ul class="list">
           <li><a href="#"></a></li>
           <li><a href="#"></a></li>
           <li><a href="#"></a></li>
@@ -196,21 +200,22 @@
       </section>
     </main>
 
-    <footer>
+    <!--Футер-->
+    <footer class="footer">
       <div>
         <a href="./index.html">Web Studio</a>
         <address>
-          <ul>
-            <li>г. Киев, пр-т Леси Украинки, 26</li>
-            <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+          <ul class="list">
+            <li class="address">г. Киев, пр-т Леси Украинки, 26</li>
+            <li><a href="mailto:info@devstudio.com" class="footer-contacts">info@devstudio.com</a></li>
+            <li><a href="tel:+380961111111" class="footer-contacts">+38 096 111 11 11</a></li>
           </ul>
         </address>
       </div>
 
       <div>
-        <b>присоединяйтесь</b>
-        <ul>
+        <b class="join-us">присоединяйтесь</b>
+        <ul class="list">
           <li><a href="#" aria-label="Ссылка на Instagram">Instagram</a></li>
           <li><a href="#" aria-label="Ссылка на Twitter">Twitter</a></li>
           <li><a href="#" aria-label="Ссылка на Facebook">Facebook</a></li>
@@ -218,7 +223,7 @@
         </ul>
       </div>
 
-      <p>2020 | Developed by GoIT Students</p>
+      <p class="copyright">2020 | Developed by GoIT Students</p>
     </footer>
   </body>
 </html>

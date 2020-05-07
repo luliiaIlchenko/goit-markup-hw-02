@@ -2,29 +2,32 @@
 /*цвет заголовка #212121*/
 /*цвет акцента #2196F3*/
 /*белый цвет #FFFFFF*/
+/*цвет футера #2F303A*/
+/*цвет копирайта rgba(255, 255, 255, 0.4)*/
+
+/*Общее*/
 
 :root {
-  --primery-text-color: #757575;
+  --primary-text-color: #757575;
   --primary-title-color: #212121;
   --accent-color: #2196f3;
-  --primery-white-color: #ffffff
+  --primary-white-color: #ffffff;
   --button-text-color: #ffffff;
+  --footer-bg-color: #2f303a;
+  --copyright-color: rgba(255, 255, 255, 0.4);
 }
 
-ul {
+.list {
   list-style: none;
 }
-/*Стили для шапки*/
+
+/*Стили для Шапки*/
 
 body {
-  color: var(--primery-text-color);
+  color: var(--primary-text-color);
 }
 
-.logo {
-  color: red;
-}
-
-.site-nav {
+.site-nav .link {
   color: var(--primary-title-color);
 }
 .site-nav .link:hover,
@@ -32,10 +35,45 @@ body {
   color: var(--accent-color);
 }
 
+.contacts {
+  color: var(--primary-text-color);
+}
 
-/*Стили для героя*/
+/*Стили для Героя*/
+.hero-title {
+  color: #ffffff;
+}
 .button {
   color: var(--button-text-color);
   background-color: var(--accent-color);
 }
 
+/*Стили секций*/
+.section-title {
+  color: var(--primary-title-color);
+}
+
+.advantages-title {
+  color: var(--primary-title-color);
+}
+
+/*Стили Футера*/
+.footer {
+  background-color: var(--footer-bg-color);
+}
+
+.footer-contacts {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.join-us {
+  color: var(--button-text-color);
+}
+
+.address {
+  color: #ffffff;
+}
+
+.copyright {
+  color: var(--copyright-color);
+}
