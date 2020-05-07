@@ -51,8 +51,12 @@ body {
   color: var(--accent-color);
 }
 
-.logo-style {
+.logo-header {
   color: var(--primary-title-color);
+}
+
+.logo-footer {
+  color: #ffffff;
 }
 
 /*Стили для Героя*/
@@ -72,6 +76,11 @@ body {
 
 .advantages-title {
   color: var(--primary-title-color);
+}
+
+.work-title {
+  color: #ffffff;
+  background-color: rgba(47, 48, 58, 0.8);
 }
 
 /*Стили Футера*/
