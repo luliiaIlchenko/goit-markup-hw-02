@@ -16,21 +16,20 @@
   --footer-bg-color: #2f303a;
   --copyright-color: rgba(255, 255, 255, 0.4);
 }
-
+body {
+  font-family: Roboto;
+  color: var(--primary-text-color);
+}
 .list {
   list-style: none;
 }
 
 .link {
   text-decoration: none;
+  font-family: inherit;
 }
 
 /*Header*/
-
-body {
-  color: var(--primary-text-color);
-  font-family: Roboto;
-}
 
 .site-nav .link {
   color: var(--primary-title-color);
@@ -89,9 +88,9 @@ body {
   background-color: #757575; /*чтобы белый текст был виден*/
 }
 .button {
+  font-family: inherit; /*почему не работает?*/
   color: var(--button-text-color);
   background-color: var(--accent-color);
-  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
@@ -182,11 +181,31 @@ body {
 }
 
 /*Portfolio*/
-.portfolio-filter .link {
+.portfolio .link {
   color: var(--primary-title-color);
 }
-.portfolio-filter .link:hover,
-.portfolio-filter .link:focus {
+.portfolio .filter:hover,
+.portfolio .filter:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.portfolio-item {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.portfolio-type {
+  color: var(--primary-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
 }
