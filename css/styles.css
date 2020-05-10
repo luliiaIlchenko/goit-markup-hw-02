@@ -17,7 +17,7 @@
   --copyright-color: rgba(255, 255, 255, 0.4);
 }
 body {
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   color: var(--primary-text-color);
 }
 .list {
@@ -33,7 +33,7 @@ body {
 
 .site-nav .link {
   color: var(--primary-title-color);
-  font-weight: 500; /*в макете 500, но визуально больше*/
+  font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
@@ -117,7 +117,6 @@ body {
 }
 
 .worker-job /*подумать над названием класа*/ {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.1;
   text-align: center;
@@ -134,7 +133,6 @@ body {
 }
 
 .text {
-  font-weight: 400l;
   font-size: 18px;
   line-height: 1.6;
   letter-spacing: 0.03em;
@@ -143,7 +141,6 @@ body {
 .work-title {
   color: #ffffff;
   background-color: rgba(47, 48, 58, 0.8); /*чтобы белый текст был виден*/
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.1;
   text-align: center;
@@ -157,20 +154,25 @@ body {
 }
 
 .footer-contacts {
+  font-style: normal;
   color: rgba(255, 255, 255, 0.6);
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
 }
 
-.join-us {
+.label {
   color: var(--button-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 .address {
+  font-style: normal;
   color: #ffffff;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -178,21 +180,31 @@ body {
 
 .copyright {
   color: var(--copyright-color);
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 2;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 /*Portfolio*/
 .portfolio .link {
   color: var(--primary-title-color);
 }
-.portfolio .filter:hover,
-.portfolio .filter:focus {
-  color: var(--primary-white-color);
-  background-color: var(--accent-color);
+
+.portfolio .filter {
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+.portfolio .filter:hover,
+.portfolio .filter:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
 }
 
 .portfolio-item {
@@ -204,8 +216,13 @@ body {
 
 .portfolio-type {
   color: var(--primary-text-color);
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;
+}
+
+/*Current page*/
+
+.site-nav .current.link {
+  color: var(--accent-color);
 }
